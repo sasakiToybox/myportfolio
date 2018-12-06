@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>サンプルページ</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- header始まり -->
+  <header>
+    <div ciass="logo">
+      <a href="index.html"><h2>Myportfolio</h2></a>
+    </div>
+    <nav>
+      <ul class="globl-nav">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header終わり -->
+  
+  <!-- wrap始まり -->
+  <div id="wrap">
+    <div class="content">
+    <section>
+      <h2 class="icon">Contact form
+        </h2>
+        <div class="form">
+          <form>
+            <dl>
+                <dt><span class="required">お名前</span></dt>
+                <dd><input type="text" name="name" class="name" required></dd>
+                <dt><span class="required">メールアドレス</span></dt>
+                <dd><input type="email" name="email" class="email" required></dd>
+                <dt>お電話番号</dt>
+                <dd><input type="tel" name="tel" class="tel"></dd>
+                <dt>お問い合わせ種別</dt>
+                <dd>
+                  <select name="type" class="type">
+                    <option value="お仕事のご依頼">単発の仕事のご依頼</option>
+                    <option value="お仕事の依頼">長期のお仕事のご依頼（企業への就業含む）</option>
+                    <option value="その他お問い合わせ">その他お問い合わせ</option>
+                  </select>
+                </dd>
+                <dt>ご希望のご連絡手段</dt>
+                <dd>
+                    <input type="radio" name="contact" value="Eメール">Eメール
+                    <input type="radio" name="contact" value="お電話">お電話
+                </dd>
+                <dt>メッセージ</dt>
+                <dd><textarea name="message" class="message"></textarea></dd>
+            </dl>
+            <button type="submit" class="btn">送信</button>
+          </form>
+          <div class="attention">
+            <p>※「<span class="required"></span>」の付いている項目は必須項目です。<br>
+            ※メッセージ送信後、48時間以内に担当者よりご連絡いたします<br>
+            <span class="red">※このメールフォームは現在使用不可です。mysqlの知識がついたら完成させます</span>
+            </p>
+          </div>
+      </div>
+    </section>
+    </div>
+  </div>
+  <!-- wrap終わり -->
+  
+  <!-- footer始まり -->
+  <footer>
+    <small>(C)2017 Hattori-studio.</small>
+  </footer>
+  <!-- footer終わり -->
+  
+</body>
+</html>
